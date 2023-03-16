@@ -29,7 +29,7 @@ frame_corpo.grid(row=1, column=0)
 b_1 = Button(frame_corpo, text="C", width=11, height=2)
 b_1.place(x=0, y=0)
 b_1 = Button(frame_corpo, text="%", width=11, height=2)
-b_1.place(x=100, y=0)
+b_1.place(x=90, y=0)
 b_1 = Button(frame_corpo, text="/", width=11, height=2)
 b_1.place(x=177, y=0)
 
