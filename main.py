@@ -24,11 +24,26 @@ frame_tela.grid(row=0, column=0)
 frame_corpo = Frame(janela, width=235, height=268)
 frame_corpo.grid(row=1, column=0)
 
-# criando Label
 
-app_label = Label(frame_tela, text='123456789', width=16, height=2, padx=7,
+# criando Função
+
+def entrar_valores():
+    resultado = eval('9/9')
+
+    # passando valor para a tela
+    valor_texto.set(resultado)
+
+
+
+
+# criando Label
+valor_texto = StringVar()
+
+
+app_label = Label(frame_tela, textvariable=valor_texto, width=16, height=2, padx=7,
                   relief=FLAT, anchor='e', justify=RIGHT, font=('Ivy 18'), bg=cor3, fg=cor2)
 app_label.place(x=0, y=0)
+
 
 # criando botoes
 
@@ -91,9 +106,6 @@ b_14 = Button(frame_corpo, text="=", width=5, height=2, bg=cor5,
               fg=cor2, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
 b_14.place(x=177, y=208)
 
-
-a = eval('9+8+2')
-print(a)
 
 
 janela.mainloop()
