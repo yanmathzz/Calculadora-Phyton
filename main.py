@@ -29,7 +29,6 @@ frame_corpo.grid(row=1, column=0)
 
 todos_valores = ''
 
-
 # criando Função
 
 def entrar_valores(event):
@@ -41,6 +40,7 @@ def entrar_valores(event):
     resultado = eval('9/9')
     
     # passando valor para a tela
+
     valor_texto.set(todos_valores)
 
 
