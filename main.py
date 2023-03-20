@@ -51,7 +51,8 @@ def entrar_valores(event):
 def calcular():
     global todos_valores
     resultado = eval(todos_valores)
-    print(resultado)
+    
+    valor_texto.set(str(resultado))
 
 # função limpar tela 
 
