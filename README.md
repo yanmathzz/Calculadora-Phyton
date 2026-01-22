@@ -1,31 +1,55 @@
-# Calculadora em Python 🧮
+# Calculadora Avançada em Python 🧮
 
 ![Python](https://img.shields.io/badge/Python-3.6%2B-blue)
 ![Tkinter](https://img.shields.io/badge/GUI-Tkinter-green)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
+![Status](https://img.shields.io/badge/Status-Ativo-success)
 
-Uma calculadora simples e funcional desenvolvida em Python com interface gráfica usando Tkinter. Ideal para aprendizado e uso diário.
+Uma calculadora completa desenvolvida em Python com interface gráfica Tkinter, oferecendo operações básicas, científicas e recursos avançados.
 
-## ✨ Funcionalidades
+### 🎨 **Temas Personalizáveis**
+- Tema Claro (padrão)
+- Tema Escuro
+- Botão para alternância rápida
 
-### Operações Básicas
-- ➕ Adição
-- ➖ Subtração
-- ✖️ Multiplicação
-- ➗ Divisão
+### 📚 **Histórico de Cálculos**
+- Armazenamento automático em arquivo JSON
+- Visualização em janela separada
+- Limpeza seletiva do histórico
+- Mantém últimos 50 cálculos
 
-### Operações Especiais
-- 🔢 Operações com números decimais
-- 📊 Porcentagem (%)
-- ⚖️ Parênteses implícitos
-- 🔄 Cálculo em tempo real
+### 💾 **Sistema de Memória**
+- **MC** - Memória Clear (Limpar)
+- **MR** - Memória Recall (Recuperar)
+- **M+** - Memória Plus (Adicionar)
+- **M-** - Memória Minus (Subtrair)
+- Persistente entre sessões
+
+### 🔬 **Funções Científicas**
+- **√** Raiz quadrada
+- **x²** Quadrado
+- **x^y** Potência
+- **sin/cos/tan** Funções trigonométricas
+- **log** Logaritmo base 10
+- **π** Constante Pi (3.14159...)
+- **e** Constante de Euler (2.71828...)
+
+### ⌨️ **Atalhos de Teclado**
+- **Teclas numéricas**: 0-9
+- **Operadores**: +, -, *, /, .
+- **Enter** ou **=**: Calcular
+- **Escape**: Limpar tudo
+- **Backspace**: Apagar caractere
+- **Delete**: Limpar entrada
+- **P**: Inserir π
+- **E**: Inserir e
 
 ## 🚀 Como Executar
 
 ### Pré-requisitos
-- Python 3.6 ou superior instalado
+- Python 3.6 ou superior
 
-### Passos para execução
+### Instalação e Execução
 ```bash
 # Clone o repositório
 git clone https://github.com/yanmathzz/Calculadora-Phyton.git
@@ -33,63 +57,88 @@ git clone https://github.com/yanmathzz/Calculadora-Phyton.git
 # Acesse o diretório
 cd Calculadora-Phyton
 
-# Execute o programa
+# Execute a calculadora
 python calculadora.py
 ```
 
-### Execução direta (se você já tem o arquivo)
+### Execução Rápida
 ```bash
 python calculadora.py
 ```
 
 ## 🎮 Como Usar
 
-### Usando o Mouse
-1. Clique nos botões numéricos para inserir números
-2. Clique nos botões de operação (+, -, ×, ÷)
-3. Clique no botão "=" para obter o resultado
-4. Use "C" para limpar toda a entrada
+### Interface Gráfica
+- Clique nos botões com o mouse
+- Use atalhos de teclado para maior velocidade
+- O resultado é exibido no display superior
 
-### Usando o Teclado
-- **Números:** 0-9
-- **Operadores:** +, -, *, /
-- **Ponto decimal:** .
-- **Calcular:** Enter ou =
-- **Limpar:** Escape (ESC) ou Delete
+### Operações Básicas
+1. Digite os números
+2. Selecione a operação (+, -, ×, ÷)
+3. Pressione "=" para calcular
 
-## 📁 Estrutura do Código
+### Funções Avançadas
+- **Histórico**: Clique em "Hist" para ver cálculos anteriores
+- **Memória**: Use os botões MC, MR, M+, M-
+- **Temas**: Clique em "Tema" para alternar claro/escuro
+- **Funções Científicas**: Use os botões na parte superior
 
-```python
-# Estrutura principal do projeto
-calculadora.py
-├── Configuração da janela
-├── Definição de cores
-├── Funções principais:
-│   ├── entrar_valores()  # Processa entrada
-│   ├── calcular()        # Executa cálculos
-│   └── limpar_tela()     # Limpa display
-├── Interface gráfica:
-│   ├── Frame do display
-│   ├── Frame dos botões
-│   └── Botões organizados
-└── Loop principal
+## 📁 Estrutura do Projeto
+
+```
+Calculadora-Phyton/
+├── calculadora.py          # Código principal
+├── README.md              # Documentação
+├── historico_calculadora.json  # Histórico (criado automaticamente)
+├── memoria_calculadora.txt     # Memória (criado automaticamente)
+└── LICENSE                # Licença MIT
 ```
 
-### Componentes Principais
+### Arquivos Gerados Automaticamente:
+- `historico_calculadora.json` - Armazena histórico de cálculos
+- `memoria_calculadora.txt` - Armazena valor da memória
 
-1. **Frame de Tela**: Exibe os números e resultados
-2. **Frame do Corpo**: Contém todos os botões
-3. **Sistema de Entrada**: Processa cliques e teclas
-4. **Motor de Cálculo**: Usa `eval()` para operações matemáticas
+## 🔧 Tecnologias Utilizadas
 
+- **Python 3** - Linguagem principal
+- **Tkinter** - Interface gráfica
+- **JSON** - Armazenamento de histórico
+- **Math** - Funções matemáticas
+
+## 📊 Funcionalidades Detalhadas
+
+### Operações Suportadas
+- **Aritméticas**: Adição, Subtração, Multiplicação, Divisão
+- **Científicas**: Potenciação, Raiz, Trigonometria, Logaritmos
+- **Especiais**: Porcentagem, Constantes matemáticas
+- **Utilitárias**: Memória, Histórico, Temas
+
+### Interface
+- Display grande com fonte clara
+- Botões coloridos por categoria
+- Layout organizado em grades
+- Feedback visual em botões
+- Indicador de memória ativa
+
+## ⚙️ Personalização
+
+### Modificar Cores
+Edite as variáveis no início do código:
+```python
+cor1 = "#3b3b3b"  # Cor de fundo
+cor2 = "#feffff"  # Cor do texto
+cor3 = "#38576b"  # Cor do display
+cor4 = "#ECEFF1"  # Cor dos botões normais
+cor5 = "#FFAB40"  # Cor dos botões de operação
+cor6 = "#2E7D32"  # Cor dos botões de memória
+cor7 = "#C62828"  # Cor dos botões de limpeza
+```
 
 ## 📄 Licença
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
 
-## 👨‍💻 Autor
+## 👨💻 Autor
 
-**Yan Matheus**
-- GitHub: [@yanmathzz](https://github.com/yanmathzz)
-- Projeto: [Calculadora Python](https://github.com/yanmathzz/Calculadora-Phyton)
-
+**Yan Matheus** - [@yanmathzz](https://github.com/yanmathzz)
